@@ -105,7 +105,7 @@ fractionai 自动化机器人 v2.1.0`;
 
 const 延迟 = (毫秒) => new Promise((resolve) => setTimeout(resolve, 毫秒));
 
-function (剩余时间, 总时间) {
+function 生成倒计时条(剩余时间, 总时间) {
   const 进度百分比 = Math.min(1, Math.max(0, 剩余时间 / 总时间));
   return 输出样式.颜色主题.强调(
     "⏳ " +
